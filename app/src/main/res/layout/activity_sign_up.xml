@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    tools:context=".ui.login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="MealMate"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Fullname"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/sign_up_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your fullname"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/grey_border"
+            android:padding="14dp"
+            android:selectAllOnFocus="true" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Email"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/sign_up_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/grey_border"
+            android:padding="14dp"
+            android:selectAllOnFocus="true" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Phone Number"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/sign_up_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone"
+            android:inputType="phone"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/grey_border"
+            android:padding="14dp"
+            android:selectAllOnFocus="true"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Dietary Preference"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/preference_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/grey_border"
+            android:padding="16dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Password"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/sign_up_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Entr your password"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionNext"
+            android:background="@drawable/grey_border"
+            android:padding="14dp"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Confirm Password"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/sign_up_re_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Enter confirm password"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:background="@drawable/grey_border"
+            android:padding="14dp"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/sign_up_pick_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Tap to select on an image"
+            android:gravity="center"
+            android:background="@drawable/grey_border"
+            android:padding="14dp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#577B00"
+            android:textColor="@color/white"
+            android:text="Sign Up"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Already have an account? "
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/sign_in_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/sign_in_underline"
+                android:textStyle="bold"
+                android:textColor="#577B00" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/login_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/password"
+            app:layout_constraintStart_toStartOf="@+id/password"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
+
+    </LinearLayout>
+
+</ScrollView>

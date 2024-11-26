@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginBottom="6dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/ingredient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:inputType="textCapSentences"
+        android:padding="12dp"
+        android:hint="Name"
+        android:background="@drawable/grey_border"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+
+    <EditText
+        android:id="@+id/ingredient_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:inputType="textCapSentences"
+        android:padding="12dp"
+        android:hint="Quantity"
+        android:background="@drawable/grey_border"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
